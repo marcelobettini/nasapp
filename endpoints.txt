@@ -1,0 +1,10 @@
+Rover Info:
+https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/?api_key=wyzaxWHc5lTTwL89niL118KKMB5cmODBVzQhMGI7
+https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/?api_key=wyzaxWHc5lTTwL89niL118KKMB5cmODBVzQhMGI7
+https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/?api_key=wyzaxWHc5lTTwL89niL118KKMB5cmODBVzQhMGI7
+https://api.nasa.gov/mars-photos/api/v1/rovers/perseverance/?api_key=wyzaxWHc5lTTwL89niL118KKMB5cmODBVzQhMGI7
+
+
+
+
+
