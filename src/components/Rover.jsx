@@ -13,28 +13,27 @@ const Rover = ({ rover }) => {
   if (error) return <p>Error loading rover info...</p>
   return (
 
-    <div className='card'>
-      < h2 > {rover.name}</h2 >
-      <img src={rover.img} alt={rover.name} />
-      {
-        data && (
-          <ul>
-            <li>Rover name: {data.rover.name}</li>
-            <li>Mission status: <span className={data.rover.status === 'active' ? "active" : "complete"}> {data.rover.status}</span></li>
-            <li>Earth departure: {new Date(data.rover.launch_date).toDateString()}</li>
-            <li>Mars arrival: {new Date(data.rover.landing_date).toDateString()}</li>
-            <li>Time on duty: {getFormatedDate(data.rover.max_sol)}</li>
-            <li>Last activity: {new Date(data.rover.max_date).toDateString()}</li>
+    <article className='card'>
+      <header className='left'>
+        < h2 > {rover.name}</h2 >
+        <img src={rover.img} alt={rover.name} />
+        {
+          data && (
+            <p>Mission status: <span className={data.rover.status === 'active' ? "active" : "complete"}> {data.rover.status}</span></p>
+          )
+        }
+      </header>
+      <div className="right">
+        <ul>
 
-            <li>Photos taken: {data.rover.total_photos}</li>
-            <li>Cameras mounted: {data.rover.cameras.map(el => el.full_name).join(" / ")}</li>
+          <li><p className='li-title'>Earth departure</p> <p className='li-description'>{new Date(data.rover.launch_date).toDateString()}</p></li>
+          <li> <p className='li-title'>Mars arrival</p> <p className='li-description'>{new Date(data.rover.landing_date).toDateString()}</p></li>
+          <li> <p className='li-title'>Time on duty</p> <p className='li-description'> {getFormatedDate(data.rover.max_sol)}</p></li>
+          <li><p className='li-title'>Photos taken</p> <p className='li-description'>{Number(data.rover.total_photos).toLocaleString()}</p></li>
+        </ul>
+      </div>
 
-
-
-          </ul>
-        )
-      }
-    </div >
+    </article >
   )
 }
 

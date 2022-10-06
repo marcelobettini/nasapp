@@ -8,9 +8,9 @@ function App() {
   return (
     <>
       <main className="container">
-        <Rover rover={rovers[0]} />
-        <Rover rover={rovers[1]} />
-        <Rover rover={rovers[2]} />
+        {/* <Rover rover={rovers[0]} /> */}
+        {/* {/* <Rover rover={rovers[1]} /> */}
+        {/* <Rover rover={rovers[2]} /> */}
         <Rover rover={rovers[3]} />
       </main>
 
