@@ -1,27 +1,31 @@
-.card {
+.cardRover {
   display: flex;
+  flex-direction: row;
   box-shadow: 4px 4px 8px;
   border-radius: 8px;
   overflow: hidden;
-  width: 600px;
+  width: 550px;
   height: 350px;
   background-color: rgb(228, 185, 178);
 }
 
 .left {
   width: 45%;
-  text-align: center;
+  align-self: center;
+  text-align: end;
 }
 
 
 .right {
   display: grid;
   align-content: center;
+  width: 55%;
+  background-color: rgba(173, 47, 24, 0.889);
+  transform: skew(-5deg, 0deg) translate(11%);
+}
 
-
-  width: 50%;
-  background-color: rgb(199, 45, 18);
-  transform: skew(-5deg, 0deg) translate(15%);
+.right p {
+  transform: translate(-6%);
 }
 
 .li-title {
@@ -30,25 +34,95 @@
 }
 
 .li-description {
-  margin-left: 1.5rem;
+  margin-left: .5rem;
   color: #fffbfb;
   margin-top: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: .5rem;
 }
 
-.card img {
+.cardRover img {
   box-shadow: 1px 1px 5px;
-  width: 90%;
+  margin: 10px 0 10px 10px;
+  width: 100%;
   border-radius: 7px;
 }
 
-.card h2 {
+.cardRover h2 {
   text-align: center;
   font-size: xx-large;
   text-transform: capitalize;
 }
 
-.card ul {
+.cardRover ul {
+  list-style-type: none;
+}
+
+.active,
+.complete {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.active {
+  color: green;
+}
+
+.complete {
+  color: tomato;
+  text-decoration: line-through;
+}
+
+
+/*mobile*/
+.cardRoverM {
+  padding: 1em 0 0 0;
+  width: 95vw;
+  display: flex;
+  box-shadow: 4px 4px 8px;
+  border-radius: 8px;
+  height: auto;
+  background-color: rgb(228, 185, 178);
+  flex-direction: column;
+}
+
+.top {
+  text-align: center;
+}
+
+.bottom {
+  display: grid;
+  padding: 1em 0;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(173, 47, 24, 0.889);
+  height: 280px;
+}
+
+.li-titleM {
+  color: #ababab;
+  margin-left: -.3rem;
+  margin-bottom: 0;
+}
+
+.li-descriptionM {
+  margin-left: .5rem;
+  color: #fffbfb;
+}
+
+.cardRoverM img {
+  box-shadow: 1px 1px 5px;
+  width: 90%;
+  border-radius: 7px;
+  margin-bottom: 12px;
+}
+
+.cardRoverM h2 {
+  text-align: center;
+  font-size: xx-large;
+  text-transform: capitalize;
+}
+
+.cardRoverM ul {
   list-style-type: none;
 }
 
