@@ -1,57 +1,33 @@
-import React, { useState, useEffect } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { rovers } from "../rovers/rovers";
 import Rover from "./components/Rover";
-import RoverMobile from "./components/RoverMobile";
 import Header from './components/Header';
 import Main from './components/Main';
+import MainMobile from './components/MainMobile';
+import Synopsis from './components/Synopsis'
 
 import "./App.css";
 function App() {
-  console.log("runs");
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 550);
-  const vwUpdate = () => {
-    setIsMobile(window.innerWidth < 550);
-  };
-  useEffect(() => {
-    window.addEventListener("resize", vwUpdate);
-    return () => window.removeEventListener("resize", vwUpdate);
-  }, []);
+  return (
+    <>
+      <Main />
+      <Header />
+      <section className="container">
+        <Synopsis />
+        <div id="rovers"></div>
+        <h1 className="text-center explorersTtl mt-5">explorers of a new world</h1>
+        <div className="row justify-content-around my-5">
+          <Rover className="col-12 col-sm-6 " rover={rovers[0]} />
+          <Rover className="col-12 col-sm-6 " rover={rovers[1]} />
+          <Rover className="col-12 col-sm-6 " rover={rovers[2]} />
+          <Rover className="col-12 col-sm-6 " rover={rovers[3]} />
+        </div>
+      </section>
+    </>
+  );
 
-  {
-    if (!isMobile) {
-      return (
-        <>
-          <Header />
-          <Main />
-
-          <section className="container">
-            <div className="row justify-content-around my-5">
-              <Rover className="col-12 col-sm-6 " rover={rovers[0]} />
-              <Rover className="col-12 col-sm-6 " rover={rovers[1]} />
-              <Rover className="col-12 col-sm-6 " rover={rovers[2]} />
-              <Rover className="col-12 col-sm-6 " rover={rovers[3]} />
-            </div>
-          </section>
-        </>
-      );
-    } else
-      return (
-        <>
-          <Header />
-          <Mission></Mission>
-          <main className="container">
-            <div className="row justify-content-around my-5">
-              <RoverMobile className="col-12 col-sm-6 " rover={rovers[0]} />
-              <RoverMobile className="col-12 col-sm-6 " rover={rovers[1]} />
-              <RoverMobile className="col-12 col-sm-6 " rover={rovers[2]} />
-              <RoverMobile className="col-12 col-sm-6 " rover={rovers[3]} />
-            </div>
-          </main>
-        </>
-      );
-  }
 }
+
 
 export default App;

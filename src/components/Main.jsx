@@ -4,7 +4,7 @@ import './Main.css'
 
 const Main = () => {
   return (
-    <main>
+    <main id="home">
       <video className='videobg' loop autoPlay muted>
         <source src='../../assets/RoverLanding.mp4' type='video/mp4' />
       </video>

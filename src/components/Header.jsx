@@ -6,31 +6,27 @@ import Container from "react-bootstrap/Container";
 
 const Header = () => {
   return (
-    <Navbar bg="light" expand="sm" sticky="top">
+    <Navbar classNAme="nav" bg="light" expand="sm" sticky="top">
       <Container>
         <Navbar.Brand href="#home">
+          <span className="text-danger">Mars</span>
           <img
             className="logo"
             src="../../assets/meatball-nasa-logo.png"
             alt=""
           />
-          Mars Rover
+          Rover
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
+            <Nav.Link href="#rovers">Rovers</Nav.Link>
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+            <NavDropdown title="Missions" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Spirit</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Opportunity</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Curiosity</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Perseverance</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

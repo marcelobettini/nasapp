@@ -1,15 +1,10 @@
-main {
-  height: 100vh;
-  margin-bottom: 15rem;
-}
-
 .videobg {
   width: 100vw;
 }
 
 .ttlHeader {
   position: absolute;
-  top: 25%;
+  top: 12%;
   left: 5%;
 }
 
