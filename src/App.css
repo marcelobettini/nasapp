@@ -3,7 +3,7 @@
 }
 
 .explorersTtl {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   font-size: 4rem;
   margin-bottom: 5rem;
   margin-top: 5rem;
@@ -11,4 +11,8 @@
 
 #rovers {
   height: 7rem;
+}
+
+#mep {
+  height: 10px;
 }

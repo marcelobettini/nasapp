@@ -4,7 +4,7 @@
 
 .ttlHeader {
   position: absolute;
-  top: 12%;
+  top: 5%;
   left: 5%;
 }
 
@@ -13,18 +13,38 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   border-radius: 5px;
   background-color: beige;
 }
 
 .ttlHeader h1 {
   text-align: center;
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: 900;
   border-radius: 5px;
   color: beige;
   background-color: rgba(10, 10, 10, 0.61);
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 719px) {
+  .ttlHeader {
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+  }
+
+  .ttlHeader h3 {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0.5rem;
+  }
+
+  .ttlHeader h1 {
+    font-size: 32px;
+    font-weight: 800;
+    padding: 0.5rem;
+  }
 }

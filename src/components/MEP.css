@@ -1,0 +1,20 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+.mepContainer {
+  margin: 10rem 0 5rem 0;
+}
+.componentContainer {
+  height: 400px;
+  overflow-y: scroll;
+}
+ul,
+ol {
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+li {
+  margin: 1rem 0;
+}

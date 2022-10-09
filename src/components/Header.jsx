@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 
 const Header = () => {
   return (
-    <Navbar classNAme="nav" bg="light" expand="sm" sticky="top">
+    <Navbar className="nav" bg="light" expand="sm" sticky="top">
       <Container>
         <Navbar.Brand href="#home">
           <span className="text-danger">Mars</span>
@@ -20,13 +20,18 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
+            <Nav.Link href="#mep">Program</Nav.Link>
             <Nav.Link href="#rovers">Rovers</Nav.Link>
             <Nav.Link href="#home">Home</Nav.Link>
             <NavDropdown title="Missions" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Spirit</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Opportunity</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Opportunity
+              </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Curiosity</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Perseverance</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">
+                Perseverance
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
