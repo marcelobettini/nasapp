@@ -5,6 +5,7 @@ import { rovers } from '../rovers/rovers';
 import Rover from "./components/Rover";
 import RoverMobile from "./components/RoverMobile";
 import Header from './components/Header';
+import Main from './components/Main';
 
 import './App.css'
 function App() {
@@ -23,14 +24,16 @@ function App() {
       return (
         <>
           <Header />
-          <main className="container">
+          <Main />
+
+          <section className="container">
             <div className="row justify-content-around my-5">
               <Rover className="col-12 col-sm-6 " rover={rovers[0]} />
               <Rover className="col-12 col-sm-6 " rover={rovers[1]} />
               <Rover className="col-12 col-sm-6 " rover={rovers[2]} />
               <Rover className="col-12 col-sm-6 " rover={rovers[3]} />
             </div>
-          </main>
+          </section>
         </>
       )
     } else return (
