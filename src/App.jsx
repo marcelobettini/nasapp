@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { rovers } from '../rovers/rovers';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { rovers } from "../rovers/rovers";
 import Rover from "./components/Rover";
 import RoverMobile from "./components/RoverMobile";
 import Header from './components/Header';
 import Main from './components/Main';
 
-import './App.css'
+import "./App.css";
 function App() {
-  console.log('runs');
+  console.log("runs");
   const [isMobile, setIsMobile] = useState(window.innerWidth < 550);
   const vwUpdate = () => {
-    setIsMobile(window.innerWidth < 550)
-  }
+    setIsMobile(window.innerWidth < 550);
+  };
   useEffect(() => {
     window.addEventListener("resize", vwUpdate);
     return () => window.removeEventListener("resize", vwUpdate);
@@ -35,20 +35,22 @@ function App() {
             </div>
           </section>
         </>
-      )
-    } else return (
-      <>
-        <Header />
-        <main className="container">
-          <div className="row justify-content-around my-5">
-            <RoverMobile className="col-12 col-sm-6 " rover={rovers[0]} />
-            <RoverMobile className="col-12 col-sm-6 " rover={rovers[1]} />
-            <RoverMobile className="col-12 col-sm-6 " rover={rovers[2]} />
-            <RoverMobile className="col-12 col-sm-6 " rover={rovers[3]} />
-          </div>
-        </main>
-      </>
-    )
+      );
+    } else
+      return (
+        <>
+          <Header />
+          <Mission></Mission>
+          <main className="container">
+            <div className="row justify-content-around my-5">
+              <RoverMobile className="col-12 col-sm-6 " rover={rovers[0]} />
+              <RoverMobile className="col-12 col-sm-6 " rover={rovers[1]} />
+              <RoverMobile className="col-12 col-sm-6 " rover={rovers[2]} />
+              <RoverMobile className="col-12 col-sm-6 " rover={rovers[3]} />
+            </div>
+          </main>
+        </>
+      );
   }
 }
 
