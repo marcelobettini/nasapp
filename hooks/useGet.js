@@ -9,7 +9,7 @@ export const useGet = (endpoint) => {
 
   const getdata = async (endpoint) => {
     try {
-      const { data } = await API.get(`${endpoint}?api_key=${API_KEY}`);
+      const { data } = await API.get(`${endpoint}api_key=${API_KEY}`);
       setData((prev) => (prev = data));
     } catch (error) {
       setError((prev) => (prev = true));

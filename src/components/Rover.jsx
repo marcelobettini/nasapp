@@ -15,7 +15,7 @@ const Rover = ({ rover }) => {
     return () => window.removeEventListener("resize", vwUpdate);
   }, []);
 
-  const ep = `/${rover.name}/`
+  const ep = `/${rover.name}/?`
   const [data, error, loading] = useGet(ep)
 
   if (loading) return <Loading type='three_dots' width={100} height={100} fill='#f44242' />

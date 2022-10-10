@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./MEP.css";
-import Nav from "react-bootstrap/Nav";
 import MEP1 from "./MEP1";
 import MEP2 from "./MEP2";
 import MEP3 from "./MEP3";
@@ -15,7 +15,7 @@ const MEP = () => {
   const [component, setComponent] = useState(<MEP1 />);
   return (
     <div className="row mepContainer bg-light py-5">
-      <div className="col col-sm-5">
+      <div className="col-12 col-sm-5">
         <h2 className="display-6 mb-4">Mars Exploration Program</h2>
         <Navbar className="nav" bg="light">
           <Container>
@@ -53,13 +53,13 @@ const MEP = () => {
               <Nav.Link
                 onClick={() => setComponent((prev) => (prev = <MEP7 />))}
               >
-                research programs
+                technologies
               </Nav.Link>
             </Nav>
           </Container>
         </Navbar>
       </div>
-      <div className="col col-sm-7 componentContainer">{component}</div>
+      <div className="col-12 offset-lg-1 col-lg-6 col-sm-7 mt-4 componentContainer">{component}</div>
     </div>
   );
 };

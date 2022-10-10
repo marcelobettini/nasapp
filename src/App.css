@@ -4,15 +4,22 @@
 
 .explorersTtl {
   font-family: "Russo One", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 5rem;
   margin-top: 5rem;
 }
 
-#rovers {
+#rovers,
+#photos {
   height: 7rem;
 }
 
 #mep {
   height: 10px;
+}
+
+@media screen and (max-width: 719px) {
+  .explorersTtl {
+    font-size: 1.8rem;
+  }
 }

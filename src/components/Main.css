@@ -29,6 +29,10 @@
   border-radius: 5px;
 }
 
+.modalPic {
+  background-color: red;
+}
+
 @media screen and (max-width: 719px) {
   .ttlHeader {
     left: 50%;
@@ -47,4 +51,5 @@
     font-weight: 800;
     padding: 0.5rem;
   }
+
 }

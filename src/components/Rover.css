@@ -25,7 +25,7 @@
 }
 
 .right p {
-  transform: translate(-6%);
+  transform: translate(4%);
 }
 
 .li-title {
@@ -49,7 +49,7 @@
 
 .cardRover h2 {
   text-align: center;
-  font-size: xx-large;
+  font-size: x-large;
   text-transform: capitalize;
 }
 
@@ -76,7 +76,7 @@
 /*mobile*/
 .cardRoverM {
   padding: 1em 0 0 0;
-  width: 95vw;
+  width: 90vw;
   display: flex;
   box-shadow: 4px 4px 8px;
   border-radius: 8px;
@@ -111,14 +111,14 @@
 
 .cardRoverM img {
   box-shadow: 1px 1px 5px;
-  width: 90%;
+  width: 80%;
   border-radius: 7px;
   margin-bottom: 12px;
 }
 
 .cardRoverM h2 {
   text-align: center;
-  font-size: xx-large;
+  font-size: large;
   text-transform: capitalize;
 }
 
