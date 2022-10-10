@@ -2,22 +2,22 @@ export const rovers = [
   {
     id: 1,
     name: 'spirit',
-    img: "./assets/spirit.jpg"
+    img: "./assets/media/spirit.jpg"
 
   },
   {
     id: 2,
     name: 'opportunity',
-    img: "./assets/opportunity.jpg"
+    img: "./assets/media/opportunity.jpg"
   },
   {
     id: 3,
     name: 'curiosity',
-    img: "./assets/curiosity.jpg",
+    img: "./assets/media/curiosity.jpg",
   },
   {
     id: 4,
     name: 'perseverance',
-    img: "./assets/perseverance.jpg"
+    img: "./assets/media/perseverance.jpg"
   }
 ]
