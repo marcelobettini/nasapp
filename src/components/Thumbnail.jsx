@@ -14,7 +14,7 @@ const Thumbnail = ({ props }) => {
     <>
       <figure className='col-12 col-sm-2' onClick={showDetail}>
         <img width="100" height={100} src={props.img_src} />
-        <figcaption> {props.camera.name}</figcaption>
+        <figcaption> {props.camera.name.length > 11 ? `${props.camera.name.split("").slice(0, 9).join("")}...` : props.camera.name}</figcaption>
       </figure>
 
 
