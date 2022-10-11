@@ -12,7 +12,7 @@ const Header = () => {
           <span className="text-danger">Mars</span>
           <img
             className="logo"
-            src="../../assets/media/meatball-nasa-logo.png"
+            src="../../public/media/meatball-nasa-logo.png"
             alt=""
           />
           Rover
