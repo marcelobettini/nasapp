@@ -2,22 +2,22 @@ export const rovers = [
   {
     id: 1,
     name: 'spirit',
-    img: "/assets/spirit.jpg"
+    img: "https://res.cloudinary.com/dsvdu8znq/image/upload/v1665449543/spirit_vpifyv.jpg"
 
   },
   {
     id: 2,
     name: 'opportunity',
-    img: "/assets/opportunity.jpg"
+    img: "https://res.cloudinary.com/dsvdu8znq/image/upload/v1665449543/opportunity_orqmiu.jpg"
   },
   {
     id: 3,
     name: 'curiosity',
-    img: "/assets/curiosity.jpg",
+    img: "https://res.cloudinary.com/dsvdu8znq/image/upload/v1665449543/curiosity_coxysq.jpg",
   },
   {
     id: 4,
     name: 'perseverance',
-    img: "/assets/perseverance.jpg"
+    img: "https://res.cloudinary.com/dsvdu8znq/image/upload/v1665449543/perseverance_sehlot.jpg"
   }
 ]
