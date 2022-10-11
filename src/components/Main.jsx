@@ -10,7 +10,7 @@ const Main = () => {
       </video>
       <header className='ttlHeader'>
         <h3>Exploration of Mars</h3>
-        <h1 className='ttl'>The Rover <br /> Missions</h1>
+        <h1 className='ttl'>The Rover <br /> REdford</h1>
 
       </header>
 
