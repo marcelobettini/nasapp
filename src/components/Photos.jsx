@@ -17,6 +17,15 @@ const Photos = () => {
       setEp(prev => prev = `${rover}/photos?sol=${sol}?page=${page}&`)
     }
   }
+
+  {
+    error && (<h1>Error...</h1>
+    )
+  }
+  {
+    loading && (<h1>Loading...</h1>
+    )
+  }
   return (
 
     <div className="row">

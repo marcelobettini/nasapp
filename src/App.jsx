@@ -9,7 +9,7 @@ import Photos from "./components/Photos";
 
 import "./App.css";
 function App() {
-  console.log('Mounted APP');
+
   return (
     <>
       <Main />
